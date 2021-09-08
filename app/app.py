@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 
 app = Flask(__name__)
 Compress(app)
-client = MongoClient("mongodb://root:password@docker.mongo.db:27017/admin")
+client = MongoClient("mongodb://root:password@localhost:27017/admin")
 db = client.feeds
 sb = client.saved
 config = toml.load("app/services/config.toml")
