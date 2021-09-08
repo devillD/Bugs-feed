@@ -9,8 +9,6 @@ services:
       - mongo
     build:
       context: .
-      shm_size: "2gb"
-    shm_size: "2gb"
     command: bash -c "chmod +x /api/bin/geckodriver && service tor start && python /api/app/app.py"
     volumes:
       - .:/api
