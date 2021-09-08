@@ -13,7 +13,7 @@ services:
     volumes:
       - .:/api
     ports:
-      - "${PORT}:${PORT}"
+      - "9600:9600"
     links:
       - "mongo:docker.mongo.db"
 
