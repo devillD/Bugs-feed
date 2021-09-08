@@ -1,7 +1,7 @@
 version: "3.7"
 
 services:
-  api:
+  feed:
     container_name: python-api
     restart: unless-stopped
     tty: true
